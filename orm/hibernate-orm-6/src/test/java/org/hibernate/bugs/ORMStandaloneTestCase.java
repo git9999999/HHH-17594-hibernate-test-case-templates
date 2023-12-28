@@ -106,7 +106,6 @@ public class ORMStandaloneTestCase {
         addressUserRelations.forEach(addressUserRelation -> System.out.println("MyMessage " + addressUserRelation.getId().getMyAddress()));
         myMessage.getReceiverAddress().castToMyAddress().getAddressUserRelations()
             .forEach(addressUserRelation2 -> System.out.println(addressUserRelation2.getId().getMyUser()));
-        System.out.println("urban 2");
 
         entityManager.flush();
         entityManager.getTransaction().commit();
