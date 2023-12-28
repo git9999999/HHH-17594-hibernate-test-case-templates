@@ -1,0 +1,41 @@
+package org.hibernate.bugs.entities;
+
+public enum IdPrefix {
+    ADDRESS("AD"),
+    AUDIT("AU"),
+    EMAIL("EM"),
+    EMAIL_RECEIVER_BCC("MRBCC"),
+    EMAIL_RECEIVER_CC("MRCC"),
+    EMAIL_RECEIVER_TO("MRT"),
+    EMAIL_TEMPLATE("EMT"),
+    GUEST_PORTAL_LOGIN_ATTEMPTS("GPLA"),
+    INBOX_MESSAGE("IBM"),
+    INBOX_MESSAGE_DICOM_ASSET("IBMDA"),
+    INBOX_MESSAGE_DICOM_ASSET_EXPORT("IBMDAE"),
+    INBOX_MESSAGE_NON_DICOM_ASSET("IBMNDA"),
+    JOB_ORDER_ID("JO"),
+    MEDICAL_EXCHANGE_DEFAULT_FORM_DATA("MEDFD"),
+    MEDICAL_EXCHANGE_MASTER_DATA("MEMD"),
+    ORGANISATION("O"),
+    OUTBOX_MESSAGE("OBM"),
+    OUTBOX_MESSAGE_DICOM_ASSET("OBMDA"),
+    OUTBOX_MESSAGE_FILE_UPLOAD("OBMFU"),
+    OUTBOX_MESSAGE_FILE_UPLOAD_CHUNK("OBMFUC"),
+    OUTBOX_MESSAGE_NON_DICOM_ASSET("OBMNDA"),
+    REQUEST_RESPONSE_LOG("RRL"),
+    SMS("SMS"),
+    TRUSTED_DOMAIN("TD"),
+    USER("U"),
+    USER_MEDICAL_SHARE_LAST_USED_ADDRESS_MEDICAL_SHARE_ID("UMSLUAMS");
+
+    private final String prefix;
+
+    IdPrefix(String prefix) {
+        this.prefix = prefix;
+    }
+
+    public String getPrefix() {
+        return this.prefix;
+    }
+
+}
