@@ -8,7 +8,7 @@ import java.util.Objects;
 @MappedSuperclass
 public abstract class SingleStringValueHolder {
 
-    private final String value;
+    private  String value;
 
     protected SingleStringValueHolder() {
         this.value = null;

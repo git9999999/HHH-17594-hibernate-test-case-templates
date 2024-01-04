@@ -10,7 +10,7 @@ import org.hibernate.bugs.entities.BaseEntity;
 public abstract class User extends BaseEntity<UserId> {
 
     @EmbeddedId
-    private final UserId userId;
+    private  UserId userId;
 
     public User(UserId userId) {
         this.userId = userId;

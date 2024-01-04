@@ -20,7 +20,7 @@ import org.hibernate.bugs.entities.address.MyAddress;
 public abstract class Address  extends BaseEntity<AddressId> {
 
     @EmbeddedId
-    private final AddressId addressId;
+    private  AddressId addressId;
 
     public Address(AddressId addressId) {
         this.addressId = addressId;

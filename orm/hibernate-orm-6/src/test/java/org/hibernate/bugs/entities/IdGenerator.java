@@ -4,8 +4,8 @@ import java.util.UUID;
 
 public class IdGenerator {
 
-    public static final int    UUID_LENGTH_WITHOUT_SEPARATOR = 32;
-    public static final String SEPARATOR                     = "-";
+    public static  int    UUID_LENGTH_WITHOUT_SEPARATOR = 32;
+    public static  String SEPARATOR                     = "-";
 
     private IdGenerator() {
     }

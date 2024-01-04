@@ -5,7 +5,7 @@ public enum IdPrefix {
     INBOX_MESSAGE("IBM"),
     USER("U");
 
-    private final String prefix;
+    private  String prefix;
 
     IdPrefix(String prefix) {
         this.prefix = prefix;

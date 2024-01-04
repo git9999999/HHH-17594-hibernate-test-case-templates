@@ -13,7 +13,7 @@ import org.hibernate.bugs.entities.address.AddressId;
 public class MyMessage extends BaseEntity<MessageId> {
 
     @EmbeddedId
-    private final MessageId messageId;
+    private  MessageId messageId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "RECEIVER_ADDRESS_ID")

@@ -10,7 +10,7 @@ import org.hibernate.bugs.entities.relation.AddressUserRelation;
 public class MyUser extends User {
 
     @OneToMany(mappedBy = "addressUserRelationId.myUser")
-    private final List<AddressUserRelation> addressUserRelations = new ArrayList<>();
+    private  List<AddressUserRelation> addressUserRelations = new ArrayList<>();
 
     public MyUser(UserId userId) {
         super(userId);

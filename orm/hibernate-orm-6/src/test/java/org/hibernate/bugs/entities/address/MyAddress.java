@@ -10,7 +10,7 @@ import org.hibernate.bugs.entities.relation.AddressUserRelation;
 public class MyAddress extends Address {
 
     @OneToMany(mappedBy = "addressUserRelationId.myAddress")
-    private final Set<AddressUserRelation> addressUserRelations = new HashSet<>();
+    private  Set<AddressUserRelation> addressUserRelations = new HashSet<>();
 
 
     public MyAddress(AddressId addressId) {
