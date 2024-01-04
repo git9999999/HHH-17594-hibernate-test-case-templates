@@ -14,11 +14,11 @@ public class AddressUserRelationId implements Serializable {
 
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "USER_ID")
-    private final MyUser myUser;
+    private MyUser myUser;
 
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "ADDRESS_ID")
-    private final MyAddress myAddress;
+    private MyAddress myAddress;
 
     protected AddressUserRelationId() {
         this.myUser = null;
@@ -37,7 +37,6 @@ public class AddressUserRelationId implements Serializable {
     public MyAddress getMyAddress() {
         return myAddress;
     }
-
 
 
 }
